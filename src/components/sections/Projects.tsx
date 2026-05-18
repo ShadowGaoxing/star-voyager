@@ -41,8 +41,8 @@ export default function Projects() {
   ];
 
   const coverImages: Record<string, string> = {
-    luckin: "/star-voyager/images/projects/luckin-cover.jpg",
-    crop: "/star-voyager/images/projects/crop-cover.jpg",
+    luckin: "/star-voyager/images/projects/luckin-cover.png",
+    crop: "/star-voyager/images/projects/crop-cover.png",
     knowledge: "/star-voyager/images/projects/knowledge-cover.jpg",
     xiaohongshu: "/star-voyager/images/projects/xiaohongshu-cover.jpg",
     douyin: "/star-voyager/images/projects/douyin-cover.jpg",
