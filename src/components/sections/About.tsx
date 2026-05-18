@@ -43,18 +43,15 @@ export default function About() {
       >
         {/* Left: Avatar */}
         <div className="text-center md:text-left">
-          <div className="w-44 h-44 rounded-full mx-auto md:mx-0 border-2 border-gold/30 overflow-hidden bg-gradient-to-br from-gold/5 to-purple-accent/5 mb-6">
+          <div className="w-44 h-44 rounded-full mx-auto md:mx-0 border-2 border-gold/30 overflow-hidden bg-gradient-to-br from-gold/5 to-purple-accent/5 mb-10">
             <img
               src="/star-voyager/images/avatar/avatar.jpg"
               alt="Avatar"
               className="w-full h-full object-cover"
-              onError={(e) => {
-                (e.target as HTMLElement).style.display = 'none';
-                (e.target as HTMLElement).parentElement!.innerHTML = '<span class="text-5xl opacity-50">📷</span>';
-              }}
+              onError={(e) => { (e.target as HTMLElement).style.display = 'none'; }}
             />
           </div>
-          <div className="flex gap-2 justify-center md:justify-start flex-wrap">
+          <div className="flex gap-3 justify-center md:justify-start flex-wrap">
             {tags.map((tag: string) => (
               <span
                 key={tag}
