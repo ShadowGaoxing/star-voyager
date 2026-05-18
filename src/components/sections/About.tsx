@@ -37,13 +37,13 @@ export default function About() {
     <section id="about" className="section-container">
       <div
         ref={ref}
-        className={`grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-16 items-start transition-all duration-700 ${
+        className={`grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:gap-20 items-start transition-all duration-700 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
         {/* Left: Avatar */}
         <div className="text-center md:text-left">
-          <div className="w-40 h-40 rounded-full mx-auto md:mx-0 border-2 border-gold/30 overflow-hidden bg-gradient-to-br from-gold/5 to-purple-accent/5">
+          <div className="w-44 h-44 rounded-full mx-auto md:mx-0 border-2 border-gold/30 overflow-hidden bg-gradient-to-br from-gold/5 to-purple-accent/5 mb-6">
             <img
               src="/star-voyager/images/avatar/avatar.jpg"
               alt="Avatar"
