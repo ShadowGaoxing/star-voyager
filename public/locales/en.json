@@ -1,0 +1,112 @@
+{
+  "nav": { "about": "About", "work": "Work", "skills": "Skills", "timeline": "Timeline", "contact": "Contact" },
+  "hero": {
+    "label": "Portfolio 2026",
+    "title": "Explorer · Gao Xing",
+    "subtitle": "PM · AI Explorer · Star Traveler",
+    "cta": "View My Work →"
+  },
+  "about": {
+    "sectionLabel": "About",
+    "quote": "From Baoding to Sydney, from code to product, I am finding my own orbit.",
+    "education": "MCS @ University of Sydney · 2026",
+    "location": "Sydney · China",
+    "language": "中文 · English",
+    "tags": ["Warm", "Curious", "Driven"]
+  },
+  "projects": {
+    "sectionLabel": "Selected Work",
+    "sectionTitle": "Projects",
+    "viewAll": "View all →",
+    "items": [
+      {
+        "id": "luckin",
+        "category": "AI Agent",
+        "title": "Luckin Coffee AI Agent",
+        "description": "An intelligent operations assistant built with LangChain + DeepSeek, featuring auto-Q&A, user segmentation, and activity recommendations.",
+        "tags": ["LangChain", "DeepSeek", "RAG"]
+      },
+      {
+        "id": "crop",
+        "category": "ML Product",
+        "title": "Crop Classification PRD",
+        "description": "End-to-end ML productization, from requirement analysis to model deployment.",
+        "tags": ["ML", "PRD", "Remote Sensing"]
+      },
+      {
+        "id": "knowledge",
+        "category": "Knowledge System",
+        "title": "Personal AI Knowledge Base",
+        "description": "A personal knowledge management platform powered by RAG and multi-model collaboration.",
+        "tags": ["RAG", "AI Agent", "Knowledge Mgmt"]
+      },
+      {
+        "id": "xiaohongshu",
+        "category": "Content Strategy",
+        "title": "Xiaohongshu Account (Launching)",
+        "description": "Exploring content creation and social media productization strategies.",
+        "tags": ["Content Strategy", "Social Media"]
+      },
+      {
+        "id": "douyin",
+        "category": "Content Strategy",
+        "title": "Douyin Account (Launching)",
+        "description": "Short video platform content planning and growth strategy design.",
+        "tags": ["Content Strategy", "Short Video"]
+      }
+    ]
+  },
+  "skills": {
+    "sectionLabel": "Skills & Expertise",
+    "groups": [
+      {
+        "title": "🤖 AI & ML",
+        "items": [
+          { "name": "LLM Applications", "level": 90 },
+          { "name": "RAG Systems", "level": 85 },
+          { "name": "Model Deployment", "level": 75 }
+        ]
+      },
+      {
+        "title": "📊 Product",
+        "items": [
+          { "name": "Requirement Analysis", "level": 88 },
+          { "name": "Data Analysis", "level": 82 },
+          { "name": "PRD Writing", "level": 90 }
+        ]
+      },
+      {
+        "title": "💻 Tech Stack",
+        "items": [
+          { "name": "Python", "level": 85 },
+          { "name": "LangChain", "level": 82 },
+          { "name": "PyTorch", "level": 70 }
+        ]
+      },
+      {
+        "title": "🌐 Languages",
+        "items": [
+          { "name": "Chinese (Native)", "level": 100 },
+          { "name": "English (TOEFL 106)", "level": 80 }
+        ]
+      }
+    ]
+  },
+  "timeline": {
+    "sectionLabel": "Timeline",
+    "items": [
+      { "year": "2024", "title": "James Cook University", "subtitle": "BIT Graduate", "color": "blue" },
+      { "year": "2026", "title": "University of Sydney", "subtitle": "MCS Graduate", "color": "gold" }
+    ]
+  },
+  "contact": {
+    "sectionLabel": "Get in Touch",
+    "heading1": "Let's build something",
+    "heading2": "out of this world.",
+    "button": "Contact Me",
+    "email": "gaoxing_offical@126.com"
+  },
+  "footer": {
+    "copyright": "© 2026 Gao Xing · Explorer"
+  }
+}
