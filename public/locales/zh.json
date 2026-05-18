@@ -28,10 +28,10 @@
       },
       {
         "id": "crop",
-        "category": "ML Product",
-        "title": "农作物遥感分类 PRD",
-        "description": "ML模型产品化实践，从需求分析到模型部署的全流程产品方案。",
-        "tags": ["ML", "PRD", "遥感"]
+        "category": "Remote Sensing",
+        "title": "农作物遥感智能分类系统",
+        "description": "基于ESA Sentinel-2高分辨率卫星影像与TCN时序卷积网络的深度学习分类系统，实现小麦、大麦、油菜等6类地物高精度识别，Overall Accuracy达0.774。",
+        "tags": ["Deep Learning", "TCN", "Remote Sensing", "GEE"]
       },
       {
         "id": "knowledge",

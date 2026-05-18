@@ -40,8 +40,19 @@ export default function Projects() {
     "bg-gradient-to-br from-purple-accent/5 to-pink-400/10",
   ];
 
+  const coverImages: Record<string, string> = {
+    luckin: "/star-voyager/images/projects/luckin-cover.jpg",
+    crop: "/star-voyager/images/projects/crop-cover.jpg",
+    knowledge: "/star-voyager/images/projects/knowledge-cover.jpg",
+    xiaohongshu: "/star-voyager/images/projects/xiaohongshu-cover.jpg",
+    douyin: "/star-voyager/images/projects/douyin-cover.jpg",
+  };
+
+  const [imgErrors, setImgErrors] = useState<Record<string, boolean>>({});
+  const handleImgError = (id: string) => setImgErrors((prev) => ({ ...prev, [id]: true }));
+
   const tagColorClass = (tag: string) => {
-    const goldTags = ["LangChain", "DeepSeek", "RAG", "PRD"];
+    const goldTags = ["LangChain", "DeepSeek", "RAG", "Deep Learning"];
     const purpleTags = ["AI Agent", "ML", "Remote Sensing"];
     const greenTags = ["Content Strategy", "Social Media", "Short Video"];
     if (goldTags.includes(tag)) return "tag-gold";
@@ -69,8 +80,18 @@ export default function Projects() {
           href="#"
           className="card-base card-hover grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-0 overflow-hidden mb-8"
         >
-          <div className={`${featureGradient} min-h-[200px] md:min-h-[260px] flex items-center justify-center`}>
-            <span className="text-sm text-[rgba(255,255,255,0.25)]">{featured.title} — Cover</span>
+          <div className={`${featureGradient} min-h-[200px] md:min-h-[260px] flex items-center justify-center relative overflow-hidden`}>
+            {!imgErrors[featured.id] ? (
+              <img
+                src={coverImages[featured.id]}
+                alt={featured.title}
+                className="absolute inset-0 w-full h-full object-cover"
+                onError={() => handleImgError(featured.id)}
+              />
+            ) : null}
+            {imgErrors[featured.id] && (
+              <span className="text-sm text-[rgba(255,255,255,0.25)] relative z-10">{featured.title} — Cover</span>
+            )}
           </div>
           <div className="p-6 md:p-8">
             <div className="tag-gold inline-block mb-3">{featured.category}</div>
@@ -92,8 +113,18 @@ export default function Projects() {
               href="#"
               className="card-base card-hover p-6"
             >
-              <div className={`${gradients[i % gradients.length]} h-28 rounded-lg mb-4 flex items-center justify-center`}>
-                <span className="text-xs text-[rgba(255,255,255,0.2)]">Cover</span>
+              <div className={`${gradients[i % gradients.length]} h-28 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden`}>
+                {!imgErrors[project.id] ? (
+                  <img
+                    src={coverImages[project.id]}
+                    alt={project.title}
+                    className="absolute inset-0 w-full h-full object-cover"
+                    onError={() => handleImgError(project.id)}
+                  />
+                ) : null}
+                {imgErrors[project.id] && (
+                  <span className="text-xs text-[rgba(255,255,255,0.2)] relative z-10">Cover</span>
+                )}
               </div>
               <div className={project.category === "Content Strategy" ? "tag-green inline-block mb-2" : "tag-purple inline-block mb-2"}>
                 {project.category}

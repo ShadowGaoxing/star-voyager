@@ -28,10 +28,10 @@
       },
       {
         "id": "crop",
-        "category": "ML Product",
-        "title": "Crop Classification PRD",
-        "description": "End-to-end ML productization, from requirement analysis to model deployment.",
-        "tags": ["ML", "PRD", "Remote Sensing"]
+        "category": "Remote Sensing",
+        "title": "Crop Classification System",
+        "description": "A deep learning crop classification system using ESA Sentinel-2 satellite imagery and TCN (Temporal Convolutional Network), achieving 0.774 Overall Accuracy across 6 land cover classes.",
+        "tags": ["Deep Learning", "TCN", "Remote Sensing", "GEE"]
       },
       {
         "id": "knowledge",

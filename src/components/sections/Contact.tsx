@@ -51,7 +51,7 @@ export default function Contact() {
             <span>{email}</span>
           </a>
           <span className="text-[rgba(255,255,255,0.1)]">·</span>
-          <a href="#" className="flex items-center gap-2 text-[rgba(255,255,255,0.45)] hover:text-[#e8e8ed] transition-colors">
+          <a href="https://github.com/ShadowGaoxing" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[rgba(255,255,255,0.45)] hover:text-[#e8e8ed] transition-colors">
             <GithubLogo size={16} />
             <span>GitHub</span>
           </a>
