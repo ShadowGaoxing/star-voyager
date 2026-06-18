@@ -66,10 +66,13 @@ export default function About() {
         {/* Right: Content */}
         <div>
           <div className="section-label">{t(lang, "about.sectionLabel")}</div>
-          <blockquote className="text-xl md:text-2xl font-medium leading-relaxed text-[#e8e8ed] mb-4">
-            &ldquo;{t(lang, "about.quote")}&rdquo;
-          </blockquote>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+         <blockquote className="text-xl md:text-2xl font-medium leading-relaxed text-[#e8e8ed] mb-4">
+           &ldquo;{t(lang, "about.quote")}&rdquo;
+         </blockquote>
+          <p className="text-sm text-[rgba(255,255,255,0.6)] leading-relaxed mt-4 mb-6">
+            {t(lang, "about.bio")}
+          </p>
+         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
             {infoItems.map((item) => (
               <div key={item.label}>
                 <div className="text-xs text-[rgba(255,255,255,0.35)] uppercase tracking-wider mb-1">

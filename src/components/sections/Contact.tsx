@@ -37,13 +37,23 @@ export default function Contact() {
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-[#e8e8ed]">
           {t(lang, "contact.heading1")}
         </h2>
-        <h2 className="text-3xl md:text-4xl font-semibold tracking-tight gold-gradient mb-8">
-          {t(lang, "contact.heading2")}
-        </h2>
+         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight gold-gradient mb-8">
+           {t(lang, "contact.heading2")}
+         </h2>
 
-        <a href={outlookUrl} target="_blank" rel="noopener noreferrer" className="btn-primary inline-block mb-10">
-          {t(lang, "contact.button")}
-        </a>
+        <div className="flex items-center justify-center gap-4 mb-10">
+          <a href={outlookUrl} target="_blank" rel="noopener noreferrer" className="btn-primary">
+           {t(lang, "contact.button")}
+          </a>
+          <a
+            href="/star-voyager/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-3 rounded-full font-semibold text-sm tracking-wide border border-gold/30 text-gold hover:bg-gold/10 transition-all duration-300"
+          >
+            {t(lang, "contact.resumeButton")}
+          </a>
+        </div>
 
         <div className="flex items-center justify-center gap-6 text-sm">
           <a href={outlookUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[rgba(255,255,255,0.45)] hover:text-[#e8e8ed] transition-colors">

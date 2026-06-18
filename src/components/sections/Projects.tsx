@@ -43,9 +43,6 @@ export default function Projects() {
   const coverImages: Record<string, string> = {
     luckin: "/star-voyager/images/projects/luckin-cover.jpg",
     crop: "/star-voyager/images/projects/crop-cover.jpg",
-    knowledge: "/star-voyager/images/projects/knowledge-cover.jpg",
-    xiaohongshu: "/star-voyager/images/projects/xiaohongshu-cover.jpg",
-    douyin: "/star-voyager/images/projects/douyin-cover.jpg",
   };
 
   const [imgErrors, setImgErrors] = useState<Record<string, boolean>>({});
@@ -96,7 +93,7 @@ export default function Projects() {
           <div className="p-6 md:p-8">
             <div className="tag-gold inline-block mb-3">{featured.category}</div>
             <h3 className="text-xl font-semibold tracking-tight text-[#e8e8ed] mb-3">{featured.title}</h3>
-            <p className="text-sm text-[rgba(255,255,255,0.55)] leading-relaxed mb-4">{featured.description}</p>
+            <p className="text-sm text-[rgba(255,255,255,0.55)] leading-relaxed mb-4 whitespace-pre-line">{featured.description}</p>
             <div className="flex gap-2 flex-wrap">
               {featured.tags.map((tag: string) => (
                 <span key={tag} className={tagColorClass(tag)}>{tag}</span>

@@ -1,58 +1,70 @@
 {
-  "nav": { "about": "关于", "work": "项目", "skills": "能力", "timeline": "历程", "contact": "联系" },
+  "nav": {
+    "about": "关于",
+    "work": "项目",
+    "skills": "能力",
+    "timeline": "历程",
+    "contact": "联系"
+  },
   "hero": {
     "label": "作品集 2026",
     "title": "探索者 · 高兴",
     "subtitle": "产品经理 · AI探索者 · 星际旅行者",
     "cta": "查看我的作品 →"
   },
+  "scroll": {
+    "hint": "向下探索"
+  },
   "about": {
     "sectionLabel": "关于我",
     "quote": "从保定到悉尼，从代码到产品，我在寻找属于自己的轨道。",
+    "bio": "我是高兴，悉尼大学计算机硕士（2026届）。从编程走进AI，再从AI走向产品——我的路径不是最直接的，但每一步都让我更理解技术产品从0到1的过程。我相信好的产品经理既能理解技术的边界，也能洞察人的需求。这个网站展示的不是做过什么，而是怎么思考和为什么这样选择。",
     "education": "悉尼大学 · CS硕士 · 2026",
     "location": "悉尼 · 中国",
     "language": "中文 · English",
-    "tags": ["温暖", "好奇", "有执行力"]
+    "tags": [
+      "温暖",
+      "好奇",
+      "有执行力"
+    ]
   },
   "projects": {
     "sectionLabel": "项目精选",
     "sectionTitle": "Projects",
-    "viewAll": "查看全部 →",
     "items": [
       {
         "id": "luckin",
         "category": "AI Agent",
         "title": "瑞幸私域 AI Agent",
-        "description": "用LangChain + DeepSeek打造的智能运营助手，实现自动问答、用户分层与活动推荐。",
-        "tags": ["LangChain", "DeepSeek", "RAG"]
+        "description": "用LangChain + DeepSeek打造的智能运营助手，实现自动问答、用户分层与活动推荐。\n\n核心思考：私域运营的核心痛点是人力成本高、响应速度慢。通过构建RAG知识库与大模型推理链路，将常见运营问题的响应时间从分钟级降至实时，同时支持基于用户画像的分层触达。",
+        "tags": [
+          "LangChain",
+          "DeepSeek",
+          "RAG"
+        ]
       },
       {
         "id": "crop",
         "category": "Remote Sensing",
         "title": "农作物遥感智能分类系统",
-        "description": "基于ESA Sentinel-2高分辨率卫星影像与TCN时序卷积网络的深度学习分类系统，实现小麦、大麦、油菜等6类地物高精度识别，Overall Accuracy达0.774。",
-        "tags": ["Deep Learning", "TCN", "Remote Sensing", "GEE"]
+        "description": "基于ESA Sentinel-2卫星影像与TCN时序卷积网络的深度学习分类系统，实现小麦、大麦、油菜等6类地物高精度识别，Overall Accuracy达0.774。\n\n核心思考：传统农业遥感依赖人工标注与规则分类，泛化能力弱。选择TCN架构替代传统RNN，利用并行计算优势和更长时序记忆能力，在有限标注数据下实现更稳定的分类效果。项目覆盖数据采集、模型选型到评估闭环的完整ML产品流程。",
+        "tags": [
+          "Deep Learning",
+          "TCN",
+          "Remote Sensing",
+          "GEE"
+        ]
       },
       {
         "id": "knowledge",
         "category": "Knowledge System",
         "title": "个人AI知识库系统",
-        "description": "基于RAG与多模型协作的个人知识管理平台。",
-        "tags": ["RAG", "AI Agent", "知识管理"]
-      },
-      {
-        "id": "xiaohongshu",
-        "category": "Content Strategy",
-        "title": "小红书账号运营准备中",
-        "description": "探索内容创作与社交媒体的产品化运营策略。",
-        "tags": ["内容策略", "运营", "社交媒体"]
-      },
-      {
-        "id": "douyin",
-        "category": "Content Strategy",
-        "title": "抖音账号运营准备中",
-        "description": "短视频平台的内容规划与增长策略设计。",
-        "tags": ["内容策略", "运营", "短视频"]
+        "description": "基于RAG与多模型协作的知识管理平台。\n\n核心思考：信息碎片化是知识工作者的普遍痛点。设计了一条“摄取—索引—检索—生成”的知识管理管线，支持多格式文档接入与语义检索，让知识沉淀从文件夹整理变为可对话的智能体。",
+        "tags": [
+          "RAG",
+          "AI Agent",
+          "知识管理"
+        ]
       }
     ]
   },
@@ -60,34 +72,67 @@
     "sectionLabel": "能力清单",
     "groups": [
       {
-        "title": "🤖 AI & ML",
+        "title": "AI & ML",
         "items": [
-          { "name": "LLM应用开发", "level": 90 },
-          { "name": "RAG系统", "level": 85 },
-          { "name": "模型部署", "level": 75 }
+          {
+            "name": "LLM应用开发",
+            "level": 90
+          },
+          {
+            "name": "RAG系统",
+            "level": 85
+          },
+          {
+            "name": "模型部署",
+            "level": 75
+          }
         ]
       },
       {
-        "title": "📊 产品能力",
+        "title": "产品能力",
         "items": [
-          { "name": "需求分析", "level": 88 },
-          { "name": "数据分析", "level": 82 },
-          { "name": "PRD撰写", "level": 90 }
+          {
+            "name": "需求分析",
+            "level": 88
+          },
+          {
+            "name": "数据分析",
+            "level": 82
+          },
+          {
+            "name": "PRD撰写",
+            "level": 90
+          }
         ]
       },
       {
-        "title": "💻 技术栈",
+        "title": "技术栈",
         "items": [
-          { "name": "Python", "level": 85 },
-          { "name": "LangChain", "level": 82 },
-          { "name": "PyTorch", "level": 70 }
+          {
+            "name": "Python",
+            "level": 85
+          },
+          {
+            "name": "LangChain",
+            "level": 82
+          },
+          {
+            "name": "PyTorch",
+            "level": 70
+          }
         ]
       },
       {
-        "title": "🌐 语言",
+        "title": "语言",
         "items": [
-          { "name": "中文（母语）", "level": 100 },
-          { "name": "English (TOEFL 106)", "level": 80 }
+          {
+            "name": "中文（母语）",
+            "level": 100
+          },
+          {
+            "name": "English (TOEFL 106)",
+            "level": 80
+          }
         ]
       }
     ]
@@ -95,8 +140,24 @@
   "timeline": {
     "sectionLabel": "历程",
     "items": [
-      { "year": "2024", "title": "詹姆斯库克大学", "subtitle": "IT本科毕业", "color": "blue" },
-      { "year": "2026", "title": "悉尼大学", "subtitle": "CS硕士毕业", "color": "gold" }
+      {
+        "year": "2022 — 2024",
+        "title": "詹姆斯库克大学",
+        "subtitle": "信息技术本科 · 主修编程与数据基础，为AI方向奠定根基",
+        "color": "blue"
+      },
+      {
+        "year": "2024 — 2026",
+        "title": "悉尼大学",
+        "subtitle": "计算机科学硕士 · 聚焦AI/ML方向，完成遥感分类、RAG知识库等落地项目",
+        "color": "gold"
+      },
+      {
+        "year": "2026",
+        "title": "求职 · AI产品方向",
+        "subtitle": "寻找产品经理岗位，希望将技术背景转化为产品价值",
+        "color": "purple"
+      }
     ]
   },
   "contact": {
@@ -104,6 +165,7 @@
     "heading1": "一起做些",
     "heading2": "有趣的事情",
     "button": "联系我",
+    "resumeButton": "下载简历",
     "email": "gaoxing_offical@126.com"
   },
   "footer": {

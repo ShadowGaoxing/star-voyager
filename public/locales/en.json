@@ -1,58 +1,70 @@
 {
-  "nav": { "about": "About", "work": "Work", "skills": "Skills", "timeline": "Timeline", "contact": "Contact" },
+  "nav": {
+    "about": "About",
+    "work": "Work",
+    "skills": "Skills",
+    "timeline": "Timeline",
+    "contact": "Contact"
+  },
   "hero": {
     "label": "Portfolio 2026",
     "title": "Explorer · Gao Xing",
     "subtitle": "PM · AI Explorer · Star Traveler",
     "cta": "View My Work →"
   },
+  "scroll": {
+    "hint": "Explore Below"
+  },
   "about": {
     "sectionLabel": "About",
     "quote": "From Baoding to Sydney, from code to product, I am finding my own orbit.",
+    "bio": "I’m Gao Xing, MCS candidate at the University of Sydney (2026). My path took me from programming into AI, and from AI into product management — not the most direct route, but every step taught me how technical products go from 0 to 1. I believe great PMs understand both what technology can do and what people actually need.",
     "education": "MCS @ University of Sydney · 2026",
     "location": "Sydney · China",
     "language": "中文 · English",
-    "tags": ["Warm", "Curious", "Driven"]
+    "tags": [
+      "Warm",
+      "Curious",
+      "Driven"
+    ]
   },
   "projects": {
     "sectionLabel": "Selected Work",
     "sectionTitle": "Projects",
-    "viewAll": "View all →",
     "items": [
       {
         "id": "luckin",
         "category": "AI Agent",
         "title": "Luckin Coffee AI Agent",
-        "description": "An intelligent operations assistant built with LangChain + DeepSeek, featuring auto-Q&A, user segmentation, and activity recommendations.",
-        "tags": ["LangChain", "DeepSeek", "RAG"]
+        "description": "An intelligent operations assistant built with LangChain + DeepSeek, featuring auto-Q&A, user segmentation, and activity recommendations.\n\nThe core challenge: private-domain operations suffer from high labor costs and slow response times. By building a RAG knowledge base with an LLM reasoning pipeline, I reduced response time from minutes to real-time while enabling persona-based targeted outreach.",
+        "tags": [
+          "LangChain",
+          "DeepSeek",
+          "RAG"
+        ]
       },
       {
         "id": "crop",
         "category": "Remote Sensing",
         "title": "Crop Classification System",
-        "description": "A deep learning crop classification system using ESA Sentinel-2 satellite imagery and TCN (Temporal Convolutional Network), achieving 0.774 Overall Accuracy across 6 land cover classes.",
-        "tags": ["Deep Learning", "TCN", "Remote Sensing", "GEE"]
+        "description": "A deep learning system using ESA Sentinel-2 imagery and TCN, achieving 0.774 Overall Accuracy across 6 land cover classes.\n\nThe core thinking: traditional remote sensing relies on manual labeling and rules with poor generalization. I chose TCN over RNN for parallel computation and longer temporal memory, achieving more stable results with limited labeled data. The project covered data acquisition through evaluation — a complete ML product workflow.",
+        "tags": [
+          "Deep Learning",
+          "TCN",
+          "Remote Sensing",
+          "GEE"
+        ]
       },
       {
         "id": "knowledge",
         "category": "Knowledge System",
         "title": "Personal AI Knowledge Base",
-        "description": "A personal knowledge management platform powered by RAG and multi-model collaboration.",
-        "tags": ["RAG", "AI Agent", "Knowledge Mgmt"]
-      },
-      {
-        "id": "xiaohongshu",
-        "category": "Content Strategy",
-        "title": "Xiaohongshu Account (Launching)",
-        "description": "Exploring content creation and social media productization strategies.",
-        "tags": ["Content Strategy", "Social Media"]
-      },
-      {
-        "id": "douyin",
-        "category": "Content Strategy",
-        "title": "Douyin Account (Launching)",
-        "description": "Short video platform content planning and growth strategy design.",
-        "tags": ["Content Strategy", "Short Video"]
+        "description": "A knowledge management platform powered by RAG and multi-model collaboration.\n\nThe core thinking: information fragmentation is a universal pain point. I designed an “ingest → index → retrieve → generate” pipeline supporting multi-format document ingestion and semantic search, turning knowledge management from folder organization into a conversational agent.",
+        "tags": [
+          "RAG",
+          "AI Agent",
+          "Knowledge Mgmt"
+        ]
       }
     ]
   },
@@ -60,34 +72,67 @@
     "sectionLabel": "Skills & Expertise",
     "groups": [
       {
-        "title": "🤖 AI & ML",
+        "title": "AI & ML",
         "items": [
-          { "name": "LLM Applications", "level": 90 },
-          { "name": "RAG Systems", "level": 85 },
-          { "name": "Model Deployment", "level": 75 }
+          {
+            "name": "LLM Applications",
+            "level": 90
+          },
+          {
+            "name": "RAG Systems",
+            "level": 85
+          },
+          {
+            "name": "Model Deployment",
+            "level": 75
+          }
         ]
       },
       {
-        "title": "📊 Product",
+        "title": "Product",
         "items": [
-          { "name": "Requirement Analysis", "level": 88 },
-          { "name": "Data Analysis", "level": 82 },
-          { "name": "PRD Writing", "level": 90 }
+          {
+            "name": "Requirement Analysis",
+            "level": 88
+          },
+          {
+            "name": "Data Analysis",
+            "level": 82
+          },
+          {
+            "name": "PRD Writing",
+            "level": 90
+          }
         ]
       },
       {
-        "title": "💻 Tech Stack",
+        "title": "Tech Stack",
         "items": [
-          { "name": "Python", "level": 85 },
-          { "name": "LangChain", "level": 82 },
-          { "name": "PyTorch", "level": 70 }
+          {
+            "name": "Python",
+            "level": 85
+          },
+          {
+            "name": "LangChain",
+            "level": 82
+          },
+          {
+            "name": "PyTorch",
+            "level": 70
+          }
         ]
       },
       {
-        "title": "🌐 Languages",
+        "title": "Languages",
         "items": [
-          { "name": "Chinese (Native)", "level": 100 },
-          { "name": "English (TOEFL 106)", "level": 80 }
+          {
+            "name": "Chinese (Native)",
+            "level": 100
+          },
+          {
+            "name": "English (TOEFL 106)",
+            "level": 80
+          }
         ]
       }
     ]
@@ -95,15 +140,32 @@
   "timeline": {
     "sectionLabel": "Timeline",
     "items": [
-      { "year": "2024", "title": "James Cook University", "subtitle": "BIT Graduate", "color": "blue" },
-      { "year": "2026", "title": "University of Sydney", "subtitle": "MCS Graduate", "color": "gold" }
+      {
+        "year": "2022 — 2024",
+        "title": "James Cook University",
+        "subtitle": "BIT · Programming & data fundamentals, laid the foundation for AI",
+        "color": "blue"
+      },
+      {
+        "year": "2024 — 2026",
+        "title": "University of Sydney",
+        "subtitle": "MCS · Focused on AI/ML, completed crop classification & RAG knowledge base projects",
+        "color": "gold"
+      },
+      {
+        "year": "2026",
+        "title": "Seeking · PM / AI Product",
+        "subtitle": "Looking for product roles, turning technical background into product value",
+        "color": "purple"
+      }
     ]
   },
   "contact": {
     "sectionLabel": "Get in Touch",
-    "heading1": "Let's build something",
+    "heading1": "Let’s build something",
     "heading2": "out of this world.",
     "button": "Contact Me",
+    "resumeButton": "Download Resume",
     "email": "gaoxing_offical@126.com"
   },
   "footer": {
